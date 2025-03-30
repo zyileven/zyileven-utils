@@ -17,7 +17,7 @@
     "build:css": "./node_modules/.bin/tailwindcss -i ./src/styles/globals.css -o ./dist/styles.css",
     "build:ts": "tsc",
     "build": "pnpm run build:css && pnpm run build:ts",
-    "prepublishOnly": "pnpm run build"
+    "prepublishOnly": "pnpm run build && npm version patch"
   },
   "keywords": [],
   "files": [

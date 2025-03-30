@@ -5,7 +5,7 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
     size?: 'small' | 'medium' | 'large';
 }
 
-const Button: React.FC<ButtonProps> = ({
+export const Button: React.FC<ButtonProps> = ({
     children,
     variant = 'primary',
     size = 'medium',
@@ -34,5 +34,3 @@ const Button: React.FC<ButtonProps> = ({
         </button>
     );
 };
-
-export default Button;
