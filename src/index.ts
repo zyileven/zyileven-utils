@@ -17,7 +17,7 @@ function uniqueArray(arr: Array<any>) {
 }
 
 // Components
-export * from './components/Button';
+export { Button, type ButtonProps } from './components/Button';
 
 // 导出方法
 export { add, subtract, formatDate, uniqueArray }
