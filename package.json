@@ -1,6 +1,6 @@
 {
   "name": "zyileven-utils",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -14,8 +14,8 @@
     "./styles.css": "./dist/styles.css"
   },
   "scripts": {
-    "build": "pnpm tsc && pnpm exec tailwindcss -i ./src/styles/globals.css -o ./dist/styles.css",
-    "prepublishOnly": "pnpm run build && pnpm version patch"
+    "build": "pnpm tsc && ./node_modules/.bin/tailwindcss -i ./src/styles/globals.css -o ./dist/styles.css",
+    "prepublishOnly": "pnpm run build"
   },
   "keywords": [],
   "files": [
@@ -29,11 +29,11 @@
   "devDependencies": {
     "@types/react": "^19.0.12",
     "@types/react-dom": "^19.0.4",
-    "autoprefixer": "^10.4.21",
-    "postcss": "^8.5.3",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "tailwindcss": "^4.0.17",
+    "tailwindcss": "^3.3.0",
     "typescript": "^5.0.0"
   },
   "peerDependencies": {
