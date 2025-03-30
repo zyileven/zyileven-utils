@@ -1,5 +1,6 @@
 // E:/code/zy-utils/src/index.ts
 import formatDate from './date.js'
+import Button from "./components/Button.js";
 
 // 定义一个方法
 function add(a: number, b:number) {
@@ -17,8 +18,7 @@ function uniqueArray(arr: Array<any>) {
 }
 
 // Components
-export { default as Button } from './components/Button.js';
 export type { ButtonProps } from './components/Button.js';
 
 // 导出方法
-export { add, subtract, formatDate, uniqueArray }
+export { add, subtract, formatDate, uniqueArray, Button }
