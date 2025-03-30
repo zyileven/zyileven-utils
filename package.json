@@ -7,8 +7,7 @@
   "module": "dist/index.esm.js",
   "scripts": {
     "build": "tsc",
-    "prepublishOnly": "npm run build",
-    "publish": "npm version patch && npm publish",
+    "prepublishOnly": "npm run build && npm version patch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
