@@ -1,0 +1,9 @@
+name: CI
+on: [push]  # 触发条件：代码推送时自动运行
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4  # 检出代码
+      - name: Run tests
+        run: npm test  # 执行测试脚本

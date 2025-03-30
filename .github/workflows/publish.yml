@@ -1,0 +1,11 @@
+# .github/workflows/publish.yml
+on: [push]
+jobs:
+  publish:
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+      - run: npm ci && npm run build
+      - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
