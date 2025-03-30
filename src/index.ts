@@ -1,4 +1,4 @@
-// E:/code/zy-utils/src/index.js
+// E:/code/zy-utils/src/index.ts
 import { formatDate } from './date'
 
 // 定义一个方法
@@ -15,6 +15,9 @@ function subtract(a: number, b: number) {
 function uniqueArray(arr: Array<any>) {
     return [...new Set(arr)];
 }
+
+// Components
+export * from './components/Button';
 
 // 导出方法
 export { add, subtract, formatDate, uniqueArray }
