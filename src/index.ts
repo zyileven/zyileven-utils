@@ -1,5 +1,5 @@
 // E:/code/zy-utils/src/index.js
-import { formatDate } from './date'
+import { formatDate } from './date.ts'
 
 // 定义一个方法
 function add(a: number, b:number) {
