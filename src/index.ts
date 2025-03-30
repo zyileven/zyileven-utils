@@ -12,8 +12,4 @@ function subtract(a: number, b: number) {
 }
 
 // 导出方法
-module.exports = {
-    add,
-    subtract,
-    formatDate
-};
+export { add, subtract, formatDate }
