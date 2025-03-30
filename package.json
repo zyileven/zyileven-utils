@@ -14,8 +14,8 @@
     "./styles.css": "./dist/styles.css"
   },
   "scripts": {
-    "build": "tsc && tailwindcss -i ./src/styles/globals.css -o ./dist/styles.css",
-    "prepublishOnly": "npm run build && npm version patch"
+    "build": "pnpm tsc && pnpm exec tailwindcss -i ./src/styles/globals.css -o ./dist/styles.css",
+    "prepublishOnly": "pnpm run build && pnpm version patch"
   },
   "keywords": [],
   "files": [
