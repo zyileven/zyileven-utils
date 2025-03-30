@@ -1,6 +1,6 @@
 {
   "name": "zyileven-utils",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -14,7 +14,9 @@
     "./styles.css": "./dist/styles.css"
   },
   "scripts": {
-    "build": "pnpm tsc && ./node_modules/.bin/tailwindcss -i ./src/styles/globals.css -o ./dist/styles.css",
+    "build:css": "./node_modules/.bin/tailwindcss -i ./src/styles/globals.css -o ./dist/styles.css",
+    "build:ts": "tsc",
+    "build": "pnpm run build:css && pnpm run build:ts",
     "prepublishOnly": "pnpm run build"
   },
   "keywords": [],
